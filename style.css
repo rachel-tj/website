@@ -7,7 +7,7 @@
   body
   {
     font-family: 'cochin';
-    background: lightsteelblue;
+    background: rgb(179, 191, 208);
     font-size: large;
     padding-bottom: 100px;
     height: 100%;
@@ -158,7 +158,7 @@ textarea
   
   #top
   {
-    background-color: lightsteelblue;
+    background-color: rgb(179, 191, 208);
     z-index: 3;
     overflow: visible;
     position: sticky;
@@ -170,7 +170,7 @@ textarea
   #slideshow
   {
     border-radius: 6px;
-    background-color: rgba(168, 143, 168, 0.791);
+    background-color: rgba(95, 110, 130, 0.8);
     height: 330px;
     position: relative;
     border: thin solid black;
