@@ -534,7 +534,7 @@ textarea
   .social:hover
   {
 
-    filter: invert(0.2) sepia() hue-rotate(240deg) saturate(600%);
+    filter: invert(0.2) sepia() hue-rotate(200deg) saturate(450%);
 
   }
 
@@ -546,7 +546,7 @@ textarea
     margin-inline: 25%;
     min-width: fit-content;
     margin-block: 3%;
-    background-color: rgba(168, 143, 168, 0.791);
+    background-color:  rgba(95, 110, 130, 0.8);
     border-radius: 4px;
     padding: 20px;
     border: thin solid black;
