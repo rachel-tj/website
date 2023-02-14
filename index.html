@@ -4,60 +4,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>rachel's website</title>
+        <title>Rachel Tjarksen's Website</title>
         <link href="style.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="fishy.png">
         <script src="scripty.js"></script>
     </head>
     <body>
         <h1>
-            rachel's website!
+            Rachel Tjarksen
         </h1>
         <div id="top">
             <div id="scrolling">
                 <div class="dropdown">
-                    <button id="scroll" onclick="scrollFunction('december')"><u>menu</u></button>
-                    <div class="dropdown-content">
-                        <li class="drop"><b><a style="text-decoration: none" href="index.html">home page</a></b></li>
-                        <li class="drop"><a style="text-decoration: none" href="films.html">film reviews</a></li>
-                        <li class="drop"><a style="text-decoration: none" href="music.html">music polaroids</a></li>
-                        <li class="drop"><a style="text-decoration: none" href="recipes.html">recipes</a></li>
-                        <li class="drop"><a style="text-decoration: none" href="courses.html">course reviews</a></li>
-                        <li class="drop"><a style="text-decoration: none" href="equations.html">physics equations</a></li>
+                    <div id="medias">
+                        <img id="github" class="social" src="pics/github.png" onclick="social('github')">
+                        <img id="linkedin" class="social" src="pics/linkedin.png" onclick="social('linkedin')">
                     </div>
                 </div>
                 <button id="scroll" onclick="scrollFunction('intro')"><u>ABOUT</u></button>
                 
-                <button id="scroll" onclick="scrollFunction('recipes')"><u>RECIPES</u></button>
+                <button id="scroll" onclick="scrollFunction('recipes')"><u>SKILLS</u></button>
                 
-                <button id="scroll" onclick="scrollFunction('films')"><u>FILMS</u></button>
+                <button id="scroll" onclick="scrollFunction('films')"><u>SMTH</u></button>
                 
-                <button id="scroll" onclick="scrollFunction('music')"><u>MUSIC</u></button>
+                <button id="scroll" onclick="scrollFunction('games')"><u>LINKS</u></button>
                 
-                <button id="scroll" onclick="scrollFunction('games')"><u>GAMES</u></button>
             </div>
         </div>
-        <div onclick="redirect('about')" class="label" id="intro">
+        <div class="label2" id="intro">
             about me
         </div>
         <div class="blog">
-            <img class="mainimgs" id="img1" src="pics/trumpet.jpg" alt="rachel plays the trumpet while casey reads mensa card #69">
             here is my website.  it is loosly based off of mike hueben's blog (my dream is to become a blogger). i don't care if you don't like it.  yes, i know a strawberry is a tropical fruit!  you are probably here from my finsta since that has so many followers.  it's not easy being so famous, but somehow i manage.
             <br><br>
             if you have any complaints you can email them to <a id="mailLink" href="mailto:rst68@case.edu">rachel</a>  if you are here on your phone please stop and go on your laptop because i do not know how to html/css for phones and i don't intend on learning any time soon.  here is a quote from the things they carried, by tim o'brien:
             <br><br>
             "they carried the land itself— vietnam, the place, the soil— a powdery orange-red dust that covered their boots and fatigues and faces. they carried the sky. the whole atmosphere, they carried it, the  humidity, the monsoons, the stink of fungus and decay, all of it, they carried gravity."
         </div>
-        <div onclick="redirect('recipes')" class="label" id="recipes">
-            recipes
-        </div>
-        <div class="blog">
-            <img class="mainimgs" id="img3" src="pics/mom.png" alt="rachel and adam graduate preschool">
-            here i will tell you about my recipes.. there are the dun-dun noodles, which is stole from my ecuadorian mistress. my favorite food is eggs, but only the kind that i made in seventh grade.  seventh grade rachel doesn't exist anymore (all the bright and precious things fade so fast, and they don't come back) so unfortunatly my favorite food has been discontinued.  however, i think someday if i have a daughter, i will be able to eat the seventh grader eggs again.  
-            <br><br>
-            another excellent food is peppermint coffee.  this is coffee, usuallly mostly milk, with a scoop of peppermint ice cream in it.  eventually, the ice cream will melt and it will turn into a coffee creamer type things where at the end you are just drinking peppermint icecream with a tiny bit of coffee and milk in it.  it's like a milkshake.  another way to achieve this is by brushing your teeth and then drinking cold coffee immidietly afterwards.
-        </div>
-        <div onclick="redirect('films')" class="label" id="films">
+        <div class="label2" id="films">
             the great gatsby controversy
         </div>
         <div class="blog">
@@ -65,7 +49,7 @@
             <br><br>
             there have been some rumors that i am the author of award-winning novel <i>the great gatsby</i>.  i am here to tell you that those rumors are not true.  i am only eighteen years old, and therefore was not alive in the twenties when this book was written. please, do not be alarmed at this revealation.  the real author is francis scott key fitzgerald, and i think the world should finally know this.  he, although an underground author, deserves credit for his work and i will not stand for this  theft any longer.
         </div>
-        <div onclick="redirect('music')" class="label" id="music">
+        <div class="label2" id="music">
             songs and how i found them
         </div>
         <div class="blog">
@@ -79,91 +63,61 @@
         <div class="blog">
             over the time at case western i will have taken many classes, and if you go to the certifications page you will find some reviews.  this is not like rate my professor, i'm talking about the courses not the professors.  
         </div>
-        <div id="medias">
-            <img id="github" class="social" src="pics/github.png" onclick="social('github')">
-            <img id="linkedin" class="social" src="pics/linkedin.png" onclick="social('linkedin')">
-            <img id="spotify" class="social" src="pics/spotify.png" onclick="social('spotify')">
-            <img id="facebook" class="social" src="pics/facebook.png" onclick="social('facebook')">
-            <img id="facebook" class="social" src="pics/twitter.png" onclick="social('twitter')">
-        </div>
         <h3>
             <div class="label2" id="games">
                 games and quizzes
             </div>
             <table>
                 <tr>
-                    <td>
+                    <td onclick="newTab('tictactoe')">
                         <a href="https://rachel-tj.github.io/stem/tictactoe/" target="_blank">tic tac toe </a>
                         <div class="des">the very first game that i wrote in javascript (it's not very good)</div>
                     </td>
-                    <td>
-                        <a href="https://admission.ucla.edu/apply/transfer" target="_blank">how to get bitches</a>
-                        <div class="des">looking for a girlfriend or boyfriend? look no longer!</div>
-                    </td>
-                    <td>
+                    <td onclick="newTab('minesweeper')">
                         <a href="https://rachel-tj.github.io/stem/minesweeper" target="_blank">minesweeper</a>
                         <div class="des">a game that i didn't actually write, but nevertheless, is fun to play</div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td onclick="newTab('nonogram')">
                         <a href="https://rachel-tj.github.io/stem/nonogram" target="_blank">nonogram</a>
                         <div class="des">my favorite game so far, it's extremely addicting</div>
                     </td>
-                    <td>
+                    <td onclick="newTab('wordle')">
                         <a href="https://rachel-tj.github.io/stem/wordle" target="_blank">wordle</a>
                         <div class="des">just like the new york times, but with more fake words</div>
                     </td>
-                    <td>
+                    <td onclick="newTab('typingtest')">
                         <a href="https://rachel-tj.github.io/stem/typingtest" target="_blank">typing test</a>
                         <div class="des">a typing test with various passages stolen from ap lit books</div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td onclick="newTab('states')">
                         <a href="https://rachel-tj.github.io/stem/states" target="_blank">name the states</a>
                         <div class="des">see how quickly you can name all fifty states</div>
                     </td>
-                    <td>
+                    <td onclick="newTab('countries')">
                         <a href="https://rachel-tj.github.io/stem/countries" target="_blank">name the countries</a>
                         <div class="des">see how many of the 196 countries you can name in fifteen minutes</div>
                     </td>
-                    <td>
+                    <td onclick="newTab('manhattan')">
                         <a href="https://rachel-tj.github.io/stem/manhattan" target="_blank">the manhattan project</a>
                         <div class="des">name all of the neighborhoods in manhattan</div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td onclick="newTab('elements')">
                         <a href="https://rachel-tj.github.io/stem/elements" target="_blank">elements</a>
                         <div class="des">given a picture of the periodic table, name as many elements as you can</div>
                     </td>
-                    <td>
+                    <td onclick="newTab('hangman')">
                         <a href="https://rachel-tj.github.io/stem/hangman" target="_blank">hangman</a>
                         <div class="des">play hangman with various categories chosen by my homies</div>
                     </td>
-                    <td>
+                    <td onclick="newTab('bases')">
                         <a href="https://rachel-tj.github.io/stem/bases" target="_blank">base converter</a>
                         <div class="des">convert back and forth between numeral systems, from bases 2–36 inclusive</div>
-                    </td>
-                </tr>
-            </table>
-            <div class="label2">
-                some pdfs condsider downloading!
-            </div>
-            <table>
-                <tr>
-                    <td>
-                        <a href="deleting a node.pdf" download>how to delete a node</a>
-                        <div class="des">a flow chart to delete a node from an avl tree and rebalance it</div>
-                    </td>
-                    <td>
-                        <a href="stripper-rock-language.pdf" download>a venn diagram</a>
-                        <div class="des">learn the intersections of a stripper, a rock, and a coding language</div>
-                    </td>
-                    <td>
-                        <a href="sophomore-english.pdf" download>sophomore english class</a> 
-                        <div class="des">our sophomore year english class: the theme was 'trancendentalism'</div>
                     </td>
                 </tr>
             </table>

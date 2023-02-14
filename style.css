@@ -525,10 +525,11 @@ textarea
 
   .social
   {
-    width: 6vw;
-    height: 6vw;
+    width: 3vw;
+    height: 3vw;
     min-width: 40px;
     min-height: 40px;
+    margin-inline: 10px;
   }
 
   .social:hover
@@ -541,15 +542,12 @@ textarea
   #medias
   {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    margin-inline: 25%;
     min-width: fit-content;
-    margin-block: 3%;
-    background-color:  rgba(95, 110, 130, 0.8);
     border-radius: 4px;
-    padding: 20px;
-    border: thin solid black;
+    padding-block: 4px;
+    padding-inline: 16px;
+    margin-block: -16px;
   }
 
   table
@@ -575,12 +573,12 @@ textarea
   {
     border: thin solid black;
     border-radius: 8px;
-    background: rgba(205, 168, 235, 0.3);
+    background: rgba(168, 186, 235, 0.3);
   }
 
   td:hover > a
   {
-    color: darkviolet;
+    color: navy
   }
 
   .des
@@ -599,45 +597,14 @@ textarea
     margin-bottom: -80px;
 
   }
-
-  .drop
-  {
-    padding-block: 6px;
-    padding-inline: 10px 20px;
-    font-size: 12px;
-    border-bottom: 1px solid black;
-    text-decoration: none;
-    background-color: whitesmoke;
-  }
-
-  .dropdown-content
-  {
-    border: 1px solid black;
-    display: none;
-    overflow: visible;
-    z-index: 5;
-    width: fit-content;
-  }
   
   .dropdown
   {
     margin-left: 30px;
-    text-align: left;
-    width: fit-content;
+
     position: absolute;
   }
-  
-  .dropdown:hover > .dropdown-content
-  {
-    display: block;
-  }
-
-  .drop:hover, drop:hover > li
-  {
-    background-color: lightsteelblue;
-    text-decoration: underline 2px;
-
-  }
+ 
 
   li
   {

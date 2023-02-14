@@ -37,7 +37,7 @@ function scrollFunction(id)
   function newTab(place)
   {
     window.open(
-    "https://rachel-tj.github.io./stem/" + place);
+    "https://rachel-tj.github.io/stem/" + place);
 }
 
 function grabify(id)
