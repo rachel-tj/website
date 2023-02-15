@@ -195,7 +195,7 @@ textarea
     border-radius: 8px;
     padding: 20px;
     text-align: center;
-    animation: slide 35s infinite;
+    animation: slide 0s infinite;
   }
 
   .ftimg
@@ -218,7 +218,7 @@ textarea
   {
     align-self: center;
     position: relative;
-    left: -251%;
+    left: -191.5%;
     display: flex;
   }
 
